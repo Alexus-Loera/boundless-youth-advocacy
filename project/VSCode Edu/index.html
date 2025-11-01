@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ALoera_AdvocacyProject</title>
+        <link rel="icon" href="leadership.png">
+        <link href="reset.css" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        
+    </head>
+
+    <body>
+        
+        <!--- Title --->
+        <h2 class="title">Welcome to Boundless!</h2>
+        <!--- nav-bar --->
+        
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                    <div class="dropdown">
+                        <a  class="dropbtn">Help</a>
+                            <div class="dropdown-content">
+                                <a href="#tools-section">Tools</a>
+                                <a href="#connect-section">Connect</a>
+                                <a href="#resources-section">Resources</a>
+                            </div>
+                    </div>
+                <button id="theme-button">Toggle Dark Mode</button>
+            </li>
+          </ul>
+          
+         <!-- Petition Section -->
+        <div class="petition" id="petition">
+            <h2>Sign Our Petition 📢</h2>
+            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+            <div class="petition-container">
+                <div class="petition-para">
+                    <p><strong>Empower the Next Generation: Sign Our Petition to Support Youth-Led Change!</strong></p>
+                    <p>Young leaders have the power to transform our communities, yet many lack the resources, guidance, and opportunities to turn their visions into reality. By signing this petition, you're helping to create a world where youth voices are heard and supported, providing them with mentorship, funding, and a platform to drive meaningful change. Together, we can build a brighter future—one led by the innovative minds of tomorrow. Stand with us and sign to show your support!</p>
+                </div>
+                <div class="signatures" id="signatures">
+                    <p>🖊️ DJ from Las Vegas supports this petition.</p>
+                    <p>🖊️ Johnny from Reno supports this petition.</p>
+                    <p>🖊️ Teresa from Elko supports this petition.</p>
+                </div>
+            </div>
+
+            <!-- Sign Petition Form -->
+            <form id="sign-petition" title="sign-petition">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="First Name">
+
+                <label for="hometown">Hometown:</label>
+                <input type="text" id="hometown" required placeholder="Hometown">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Email">
+
+                <button type="button" id="sign-now-button">Sign Now</button>
+            </form>
+        </div>
+
+       <!-- Modal -->
+        <div id="thanks-modal" class="modal">
+            <div class="modal-content">
+                <!-- Close Button -->
+                <button id="close-modal-btn" class="close-btn">Close</button>
+                
+                <div id="modal-text-container">
+                    <p>Thank you for signing!</p>
+                </div>
+                <img src="image.png" alt="Thank You Image">
+            </div>
+        </div>
+
+
+
+
+
+        
+        <!--- Header --->
+        <div id="home" class = "header">
+            
+            <img src="youngactivist.jpg" width=250px/>
+            <h1>Young Activist</h1>
+            <h3>Greta Thunberg</h3>
+            <p>Greta is a young climate change activist</p>
+            <p>who fights to protect the environment.</p>
+            <p><a href="https://www.pbs.org/articles/greta-thunberg-a-year-to-change-the-world">learn more</a></p>
+            <button class = "header-button" type = "button">Prev</button>
+            <button class = "header-button" type = "button">Next</button>
+        </div>
+        
+        <!--- info --->
+        <div class = "info">
+        <div id="tools-section" class="tools">
+            <h1>Tools</h1>
+            <div class="info-content">
+                <p>Utilize tools available to you such as:</p>
+            <break>
+                <ol type="I">
+                    <li>- Community</li>
+                    <li>- School</li>
+                    <li>- Clubs</li>
+                  </ol>
+            </break>
+        </div>
+        </div>
+        <div id="connect-section" class="connect">
+            <h1>Connect</h1>
+            <div class="info-content">
+                <p>Connect with other leaders and mentors.</p>
+                <break>
+                    <ol type="1">
+                        <li>- Senators</li>
+                        <li>- Local Business Owners</li>
+                        <li>- Other Student Leaders</li>
+                      </ol>
+                </break>
+            </div>
+        </div>
+        <div id="resources-section" class="resources">
+            <h1>Resources</h1>
+            <div class="info-content">
+                <break>
+                    <ol>
+                        <li><a href = "https://www.natstuco.org/">NASC</a></li>
+                        <li><a href = "https://exchanges.state.gov/non-us/program/youth-leadership-programs">Youth Leadership Programs</a></li>
+                        <li><a href = "https://youthtoday.org/hub/youth-leadership/resources/">Youth Today</a></li>
+                      </ol>
+                </break>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr class="divider">
+    </div>
+    <div id = "about" class = "about">
+        <h1>About</h1>
+        <img src="about photo.jpg" width=250px/>
+    </div>
+    <div id="footer" class=" footer">
+        <p>Learn More</p>
+        <p>Email our Team</p>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    </body>
+    
+</html>
